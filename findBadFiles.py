@@ -3,21 +3,19 @@
 
 """
 __doc__
-特徴量抽出プログラム for HASC
+問題のあるファイル検出プログラム for HASC
+HASC Corpus内にあるstayディレクトリのファイルに対して, 標準偏差からダメファイルを検出するプログラム
 """
 import csv
 import glob
 import os
 import sys
 import numpy as np
-import matplotlib.pyplot as plt
-from scipy import signal
-from scipy.interpolate import interp1d
 
 print(__doc__)
 __author__ = "Haruyuki Ichino"
 __version__ = "0.1"
-__date__ = "2016/05/13"
+__date__ = "2016/06/13"
 
 # データ格納ディレクトリ
 inputDir = './data/'
